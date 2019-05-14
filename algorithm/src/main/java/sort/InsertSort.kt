@@ -8,10 +8,10 @@ import kotlin.random.Random
 object InsertSort {
     @JvmStatic
     fun main(args: Array<String>) {
-        val array = IntArray(10000)
+        val array = IntArray(100000)
         val random = Random
-        for (i in 0..9999)
-            array[i] = random.nextInt(10000)
+        for (i in 0..99999)
+            array[i] = random.nextInt(1000000)
         val start: Long = System.currentTimeMillis()
         InsertSort.sort(array)
         val end: Long = System.currentTimeMillis()

@@ -1,5 +1,6 @@
 package sort
 
+import java.util.*
 import kotlin.random.Random
 
 /**
@@ -34,10 +35,9 @@ object ChoseSort {
 
     private fun exchange(index1: Int, index2: Int, array: IntArray) {
         if (index1 >= array.size || index2 >= array.size || index1 < 0 || index2 < 0)
-            throw RuntimeException("bad param")
+        throw RuntimeException("bad param")
         val temp: Int = array[index1]
         array[index1] = array[index2]
         array[index2] = temp
     }
-
 }
